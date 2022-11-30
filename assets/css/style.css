@@ -56,7 +56,7 @@ body {
     cursor: pointer;
 }
 
-.btn-eq td:last-child button {
+.btn-equal td:last-child button {
     height: 204px;
 }
 
