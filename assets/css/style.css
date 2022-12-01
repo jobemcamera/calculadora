@@ -6,18 +6,61 @@
 }
 
 body {
-    background-color: rgb(45, 42, 42);
+    background-color: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* CHECKBOX MUDA TEMA */
+.theme {
+    position: relative;
+    top: 40px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.change-theme:checked + .label .ball {
+    transform: translateX(30px);
+}
+
+.change-theme {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #2B303B ;
+}
+
+.ball {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E2E4E9;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+
+/* CONTEÚDO DA CALCULADORA */
+
 .container {
     position: absolute;
-    background-color: rgb(95, 94, 91);
+    background-color: #E2E4E9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 25px;
     border: solid 2px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -27,7 +70,7 @@ body {
     font-size: 2.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgb(255,252,252);
+    color: #37474F;
     
 }
 
@@ -36,7 +79,7 @@ body {
     height: 100px;
     padding: 10px;
     margin: 10px 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: solid 2px;
 }
 
@@ -65,11 +108,12 @@ body {
     margin: 2px;
     font-size: 2.5em;
     font-weight: 500;
-    background-color: rgb(26, 25, 25);
-    color: rgb(255, 252, 252);
+    background-color: #A7AEBE;
+    color: rgb(18, 17, 17);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .btn-equal td:last-child button {
@@ -78,4 +122,42 @@ body {
 
 .btn-zero td:first-child button {
     width: 204px;
+}
+
+.btn:active {
+    background-color: #2B303B ;
+}
+
+/* MANIPULAÇÃO DO TEMA (DARK-LIGHT) */
+.dark {
+    background-color: #576075;
+}
+
+.dark .label {
+    background-color: #E2E4E9;
+}
+
+.dark .ball {
+    background-color: #2B303B ;
+}
+
+.dark .display {
+    background-color: #DEE4E7;
+}
+
+.dark .container {
+    background-color: #2B303B;
+}
+
+.dark .main-title {
+    color: rgb(255, 252, 252);
+}
+
+.dark .btn {
+    background-color: #576075;
+    color: #DEE4E7;
+}
+
+.dark .btn:active {
+    background-color: #A7AEBE ;
 }

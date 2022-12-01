@@ -117,3 +117,11 @@ function operationEqual() {
     const operation = displayPrevious.innerText.split(' ')[1];
     operations(operation);
 }
+
+// Mudando o tema (dark/light)
+const changeTheme = document.querySelector('.change-theme');
+
+changeTheme.onclick = function () {
+    document.body.classList.toggle('dark');
+    
+}
