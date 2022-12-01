@@ -31,16 +31,32 @@ body {
     
 }
 
-.display-result {
+.display {
     background-color: rgb(255, 252, 252);
-    height: 50px;
-    font-size: 2.5em;
-    font-weight: 500;
+    height: 100px;
     padding: 10px;
     margin: 10px 5px;
-    text-align: right;
     border-radius: 10px;
     border: solid 2px;
+}
+
+.display-previous {
+    position: absolute;
+    right: 0;
+    margin-top: 0px;
+    margin-right: 43px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.display-result {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 575px;
+    margin-right: 43px;
+    font-size: 2.5em;
+    font-weight: 500;
 }
 
 .btn {
