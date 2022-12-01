@@ -49,7 +49,7 @@ body {
     font-weight: 500;
 }
 
-.display-result {
+.display-current {
     position: absolute;
     right: 0;
     bottom: 0;
